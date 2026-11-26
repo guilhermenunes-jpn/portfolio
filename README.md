@@ -13,15 +13,15 @@ Portfólio acadêmico com os projetos que desenvolvi no curso de **Análise e De
 - **Sobre mim:** quem sou e minhas habilidades
 - **Projetos:** 7 trabalhos com filtro por área e janela de detalhes
 - **Formação:** linha do tempo do curso
-- **Contato:** LinkedIn, GitHub, e-mail e formulário
+- **Contato:** LinkedIn, GitHub e e-mail
 
 ## Tecnologias
 
 | Parte | O que foi usado |
 |---|---|
-| HTML | Tags semânticas, formulário com `label` e `required`, `dialog`, atributos de acessibilidade |
+| HTML | Tags semânticas, `dialog`, atributos de acessibilidade |
 | CSS | Variáveis, Grid, Flexbox, media queries, animações, modo escuro com `prefers-color-scheme` |
-| JavaScript | Filtro de projetos, validação do formulário, troca de tema com `localStorage`, `IntersectionObserver` |
+| JavaScript | Filtro de projetos, troca de tema com `localStorage`, `IntersectionObserver` |
 | Publicação | Git, GitHub e GitHub Pages |
 
 ## Estrutura

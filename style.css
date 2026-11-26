@@ -6,7 +6,6 @@
   --forte: #0d0d0d;
   --contra: #ffffff;
   --chip: #ececec;
-  --erro: #b3261e;
   color-scheme: light;
   --preto: #0d0d0d;
   --grafite: #1c1c1c;
@@ -388,7 +387,6 @@ dialog.detalhes[open] { animation: abrir 0.25s ease; }
     --forte: #f2f2f2;
     --contra: #0d0d0d;
     --chip: #2c2c2c;
-    --erro: #ff8a80;
     color-scheme: dark;
   }
 }
@@ -401,7 +399,6 @@ dialog.detalhes[open] { animation: abrir 0.25s ease; }
   --forte: #f2f2f2;
   --contra: #0d0d0d;
   --chip: #2c2c2c;
-  --erro: #ff8a80;
   color-scheme: dark;
 }
 
@@ -445,40 +442,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .filtro:hover, .filtro[aria-pressed="true"] { background: var(--forte); color: var(--contra); }
 
-.form-contato {
-  max-width: 700px;
-  margin: 64px auto 0;
-  padding: 40px;
-  border-radius: 10px;
-  background: var(--superficie);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-}
-.form-contato h3 { font-size: 1.4rem; margin-bottom: 24px; text-align: center; }
-.campo { margin-bottom: 20px; }
-.campo label { display: block; font-weight: 600; color: var(--forte); margin-bottom: 6px; }
-.campo input, .campo textarea {
-  width: 100%;
-  padding: 12px 14px;
-  border: 2px solid var(--chip);
-  border-radius: 6px;
-  background: var(--fundo);
-  color: var(--forte);
-  font: inherit;
-  transition: border-color 0.2s;
-}
-.campo textarea { resize: vertical; min-height: 140px; }
-.campo input:focus, .campo textarea:focus { border-color: var(--forte); outline: none; }
-.campo [aria-invalid="true"] { border-color: var(--erro); }
-.erro { color: var(--erro); font-size: 0.85rem; margin-top: 4px; min-height: 1.2em; }
-.form-contato .btn { width: 100%; border: none; }
-.form-status { text-align: center; margin-top: 16px; font-weight: 600; color: var(--forte); }
 
 @media (max-width: 860px) {
   .tema { margin-left: 10px; width: 34px; height: 34px; }
 }
 
 @media (max-width: 600px) {
-  .form-contato { padding: 28px 20px; }
   .filtros { margin-top: -16px; }
 }
 
