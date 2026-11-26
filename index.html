@@ -122,7 +122,8 @@
       <article class="projeto" data-categoria="front">
         <div class="capa capa-print"><img src="img/selecao.jpg" alt="Página inicial do site da Seleção Brasileira, com menu verde e o escudo da CBF em fundo amarelo." width="1280" height="800" loading="lazy"></div>
         <div class="projeto-info">
-          <p class="materia">Desenvolvimento Front-end para Web · Avaliativo · Meu primeiro site</p>
+          <div class="selos"><span class="selo">Avaliativo</span><span class="selo">Primeiro site</span></div>
+          <p class="materia">Desenvolvimento Front-end para Web</p>
           <h3>Seleção Brasileira</h3>
           <p>Meu primeiro site avaliativo: uma homenagem à Seleção, com galeria de fotos, títulos, mapa e formulário de contato, em HTML e CSS.</p>
           <div class="projeto-links">
@@ -135,7 +136,8 @@
       <article class="projeto invertido" data-categoria="ia">
         <div class="capa capa-print"><img src="img/projetotech.jpg" alt="Página inicial do Eventos Tech Brasília 2026, com faixa azul e verde e botões para explorar eventos." width="1280" height="800" loading="lazy"></div>
         <div class="projeto-info">
-          <p class="materia">Engenharia de Prompt e Aplicações em IA · Avaliativo</p>
+          <div class="selos"><span class="selo">Avaliativo</span><span class="selo">No ar</span></div>
+          <p class="materia">Engenharia de Prompt e Aplicações em IA</p>
           <h3>Projetotech: Eventos Tech Brasília 2026</h3>
           <p>Site que reúne eventos de tecnologia gratuitos em Brasília, com lista de eventos, filtros por categoria e os locais onde acontecem.</p>
           <div class="projeto-links">
@@ -148,7 +150,8 @@
       <article class="projeto" data-categoria="front">
         <div class="capa capa-print"><img src="img/site-macabro.jpg" alt="Página inicial do Site Macabro, com lua cheia, corvo e morcegos." width="800" height="500" loading="lazy"></div>
         <div class="projeto-info">
-          <p class="materia">Desenvolvimento Front-end para Web · Em dupla</p>
+          <div class="selos"><span class="selo">Em dupla</span><span class="selo">No ar</span></div>
+          <p class="materia">Desenvolvimento Front-end para Web</p>
           <h3>Site Macabro</h3>
           <p>Site com tema de Halloween feito com Bootstrap, em dupla com o Gabriel Cruz.</p>
           <div class="projeto-links">
@@ -162,6 +165,7 @@
       <article class="projeto invertido" data-categoria="front">
         <div class="capa capa-print"><img src="img/vivaz.jpg" alt="Portal de notícias Vivaz feito com Bootstrap, com menu escuro, cartões coloridos e seção de notícias." width="1280" height="800" loading="lazy"></div>
         <div class="projeto-info">
+          <div class="selos"><span class="selo">Atividade de aula</span></div>
           <p class="materia">Desenvolvimento Front-end para Web</p>
           <h3>Vivaz: portal com Bootstrap</h3>
           <p>Portal de notícias montado com componentes do Bootstrap: barra de navegação, cartões, carrossel e acordeão.</p>
@@ -175,6 +179,7 @@
       <article class="projeto" data-categoria="front">
         <div class="capa"><span>&lt;/&gt;</span><small>html + css</small></div>
         <div class="projeto-info">
+          <div class="selos"><span class="selo">Atividade de aula</span></div>
           <p class="materia">Desenvolvimento Front-end para Web</p>
           <h3>Barber Shop</h3>
           <p>Site de barbearia em HTML e CSS puro, com menu fixo, galeria de fotos, mapa e formulário de contato.</p>
@@ -188,6 +193,7 @@
       <article class="projeto invertido" data-categoria="banco">
         <div class="capa"><span>SQL</span><small>banco de dados</small></div>
         <div class="projeto-info">
+          <div class="selos"><span class="selo">Atividade de aula</span></div>
           <p class="materia">Modelagem de Banco de Dados</p>
           <h3>Modelos conceitual, lógico e físico</h3>
           <p>Diagramas entidade-relacionamento, normalização e o script SQL que cria o banco a partir do modelo lógico.</p>
@@ -201,6 +207,7 @@
       <article class="projeto" data-categoria="python">
         <div class="capa"><span>.py</span><small>python</small></div>
         <div class="projeto-info">
+          <div class="selos"><span class="selo">Atividade de aula</span></div>
           <p class="materia">Programação em Python</p>
           <h3>Exercícios de Python</h3>
           <p>Lógica de programação na prática: tipos de dados, condicionais, laços e funções.</p>
@@ -210,6 +217,22 @@
           </div>
         </div>
       </article>
+
+      <div class="github-atividade">
+        <div class="github-topo">
+          <div>
+            <h3>Meu GitHub agora</h3>
+            <p>Contribuições do último ano e os repositórios que mexi por último, direto do GitHub.</p>
+          </div>
+          <a href="https://github.com/guilhermenunes-jpn" class="btn btn-linha" target="_blank" rel="noopener">Abrir perfil</a>
+        </div>
+        <a class="grafico-github" href="https://github.com/guilhermenunes-jpn" target="_blank" rel="noopener">
+          <img src="https://ghchart.rshah.org/404040/guilhermenunes-jpn" width="663" height="104" loading="lazy" alt="Gráfico de contribuições de Guilherme no GitHub no último ano.">
+        </a>
+        <ul class="repos" data-repos>
+          <li class="repo-vazio"><a href="https://github.com/guilhermenunes-jpn?tab=repositories" target="_blank" rel="noopener">Ver todos os meus repositórios →</a></li>
+        </ul>
+      </div>
 
     </div>
   </section>
@@ -228,22 +251,75 @@
         <li>
           <span class="quando">1º semestre · concluído</span>
           <h3>Base de programação e produto</h3>
-          <ul class="skills">
-            <li>Programação de Computadores em Python</li>
-            <li>Engenharia de Prompt e Aplicações em IA</li>
-            <li>Interface e Jornada do Usuário</li>
-            <li>Prototipagem de Sistemas Computacionais</li>
-          </ul>
+          <p class="dica">Clique numa disciplina para ver o que estudei nela.</p>
+          <div class="disciplinas">
+            <details class="disciplina">
+              <summary><span class="disc-nome">Programação de Computadores em Python</span><span class="disc-estado">Concluída</span></summary>
+              <div class="disc-corpo">
+                <p class="disc-ferr">Python · VS Code</p>
+                <ul class="skills"><li>Entrada e saída de dados</li><li>Tipos de dados</li><li>Operadores</li><li>if, elif e else</li><li>Laços for e while</li><li>Funções</li></ul>
+                <a href="https://github.com/guilhermenunes-jpn/programacao_em_python" target="_blank" rel="noopener">Ver meus códigos →</a>
+              </div>
+            </details>
+            <details class="disciplina">
+              <summary><span class="disc-nome">Engenharia de Prompt e Aplicações em IA</span><span class="disc-estado">Concluída</span></summary>
+              <div class="disc-corpo">
+                <p class="disc-ferr">Jupyter · Python · IA generativa</p>
+                <ul class="skills"><li>Tokens</li><li>Prompt bom x prompt ruim</li><li>Programação assistida</li><li>Automação com IA</li><li>Debate do filme Her</li><li>Projetotech</li></ul>
+                <a href="https://github.com/guilhermenunes-jpn/engenharia_de_prompt_aplicacoes_ai" target="_blank" rel="noopener">Ver meus códigos →</a>
+              </div>
+            </details>
+            <details class="disciplina">
+              <summary><span class="disc-nome">Interface e Jornada do Usuário</span><span class="disc-estado">Concluída</span></summary>
+              <div class="disc-corpo">
+                <p class="disc-ferr">Figma · Miro · Canva</p>
+                <ul class="skills"><li>Personas</li><li>Mapa de empatia</li><li>Jornada do usuário</li><li>Protótipo de app</li></ul>
+              </div>
+            </details>
+            <details class="disciplina">
+              <summary><span class="disc-nome">Prototipagem de Sistemas Computacionais</span><span class="disc-estado">Concluída</span></summary>
+              <div class="disc-corpo">
+                <p class="disc-ferr">Draw.io</p>
+                <ul class="skills"><li>Fluxogramas</li><li>Diagramas de sistema</li><li>Protótipos de baixa fidelidade</li></ul>
+              </div>
+            </details>
+          </div>
         </li>
         <li>
           <span class="quando">2º semestre · em andamento</span>
           <h3>Web, dados e algoritmos</h3>
-          <ul class="skills">
-            <li>Desenvolvimento Front-end para Web</li>
-            <li>Modelagem de Banco de Dados</li>
-            <li>Algoritmos e Pensamento Computacional</li>
-            <li>Design Profissional</li>
-          </ul>
+          <div class="disciplinas">
+            <details class="disciplina">
+              <summary><span class="disc-nome">Desenvolvimento Front-end para Web</span><span class="disc-estado">Em andamento</span></summary>
+              <div class="disc-corpo">
+                <p class="disc-ferr">HTML · CSS · JavaScript · Bootstrap</p>
+                <ul class="skills"><li>Estrutura de páginas</li><li>CSS e Flexbox</li><li>Grid</li><li>Bootstrap</li><li>JavaScript e DOM</li><li>Git e GitHub Pages</li></ul>
+                <a href="https://github.com/guilhermenunes-jpn/desenvolvimento_front-end_para_web" target="_blank" rel="noopener">Ver meus códigos →</a>
+              </div>
+            </details>
+            <details class="disciplina">
+              <summary><span class="disc-nome">Modelagem de Banco de Dados</span><span class="disc-estado">Em andamento</span></summary>
+              <div class="disc-corpo">
+                <p class="disc-ferr">MySQL · SQL · brModelo</p>
+                <ul class="skills"><li>Modelo conceitual, lógico e físico</li><li>Entidades e atributos</li><li>Chave primária e estrangeira</li><li>Cardinalidade</li><li>Normalização</li><li>CREATE TABLE e SELECT</li></ul>
+                <a href="https://github.com/guilhermenunes-jpn/modelagem_de_banco_de_dados" target="_blank" rel="noopener">Ver meus códigos →</a>
+              </div>
+            </details>
+            <details class="disciplina">
+              <summary><span class="disc-nome">Algoritmos e Pensamento Computacional</span><span class="disc-estado">Em andamento</span></summary>
+              <div class="disc-corpo">
+                <p class="disc-ferr">Linguagem C</p>
+                <ul class="skills"><li>Decomposição de problemas</li><li>Tipos de dados e scanf</li><li>if/else e switch</li><li>while, do while e for</li><li>Vetores</li><li>Funções</li></ul>
+              </div>
+            </details>
+            <details class="disciplina">
+              <summary><span class="disc-nome">Design Profissional</span><span class="disc-estado">Em andamento</span></summary>
+              <div class="disc-corpo">
+                <p class="disc-ferr">Carreira · ética · cidadania digital</p>
+                <ul class="skills"><li>Imagem profissional</li><li>Planejamento de carreira</li><li>Ética no meio digital</li><li>Inclusão e sustentabilidade</li></ul>
+              </div>
+            </details>
+          </div>
         </li>
         <li>
           <span class="quando">Próximos passos</span>

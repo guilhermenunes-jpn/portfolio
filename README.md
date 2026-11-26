@@ -19,9 +19,9 @@ Portfólio acadêmico com os projetos que desenvolvi no curso de **Análise e De
 
 | Parte | O que foi usado |
 |---|---|
-| HTML | Tags semânticas, `dialog`, atributos de acessibilidade |
+| HTML | Tags semânticas, `dialog`, `details`, atributos de acessibilidade |
 | CSS | Variáveis, Grid, Flexbox, media queries, animações, modo escuro com `prefers-color-scheme` |
-| JavaScript | Filtro de projetos, troca de tema com `localStorage`, `IntersectionObserver` |
+| JavaScript | Filtro de projetos, repositórios ao vivo pela API do GitHub, troca de tema com `localStorage`, `IntersectionObserver` |
 | Publicação | Git, GitHub e GitHub Pages |
 
 ## Estrutura
