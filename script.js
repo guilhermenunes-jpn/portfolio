@@ -21,3 +21,31 @@ const marcarAtivo = new IntersectionObserver((itens) => {
   });
 }, { rootMargin: "-45% 0px -50% 0px" });
 secoes.forEach((s) => marcarAtivo.observe(s));
+
+document.querySelectorAll("[data-detalhes]").forEach((botao) => {
+  botao.addEventListener("click", () => document.getElementById(botao.dataset.detalhes).showModal());
+});
+
+document.querySelectorAll("dialog.detalhes").forEach((janela) => {
+  janela.querySelector(".fechar").addEventListener("click", () => janela.close());
+  janela.addEventListener("click", (e) => {
+    if (e.target === janela) janela.close();
+  });
+});
+
+const contar = new IntersectionObserver((itens) => {
+  itens.forEach((item) => {
+    if (!item.isIntersecting) return;
+    const el = item.target;
+    const alvo = Number(el.dataset.alvo);
+    const inicio = performance.now();
+    const passo = (agora) => {
+      const t = Math.min((agora - inicio) / 1200, 1);
+      el.textContent = Math.round(alvo * (1 - Math.pow(1 - t, 3)));
+      if (t < 1) requestAnimationFrame(passo);
+    };
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) requestAnimationFrame(passo);
+    contar.unobserve(el);
+  });
+}, { threshold: 0.6 });
+document.querySelectorAll("[data-alvo]").forEach((el) => contar.observe(el));

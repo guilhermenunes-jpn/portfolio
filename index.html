@@ -52,6 +52,15 @@
     <a href="#sobre" class="seta" aria-label="Ir para Sobre"></a>
   </section>
 
+  <section class="numeros" aria-label="Em números">
+    <div class="container numeros-grade">
+      <div><strong data-alvo="2">2</strong><span>semestres</span></div>
+      <div><strong data-alvo="8">8</strong><span>disciplinas</span></div>
+      <div><strong data-alvo="6">6</strong><span>projetos</span></div>
+      <div><strong data-alvo="14">14</strong><span>tecnologias</span></div>
+    </div>
+  </section>
+
   <section id="sobre" class="secao">
     <div class="container">
       <h2 class="titulo">Sobre mim</h2>
@@ -101,6 +110,7 @@
           <div class="projeto-links">
             <a href="https://gabrielvictoraraujodacruz-create.github.io/Site_Macabro/" class="btn" target="_blank" rel="noopener">Ver site</a>
             <a href="https://github.com/gabrielvictoraraujodacruz-create/Site_Macabro" class="btn btn-linha" target="_blank" rel="noopener">Código</a>
+            <button type="button" class="btn btn-linha" data-detalhes="d-macabro">Detalhes</button>
           </div>
         </div>
       </article>
@@ -111,7 +121,10 @@
           <p class="materia">Desenvolvimento Front-end para Web</p>
           <h3>Vivaz: portal com Bootstrap</h3>
           <p>Portal de notícias montado com componentes do Bootstrap: barra de navegação, cartões, carrossel e acordeão.</p>
-          <a href="https://github.com/guilhermenunes-jpn/desenvolvimento_front-end_para_web" class="btn" target="_blank" rel="noopener">Ver código</a>
+          <div class="projeto-links">
+            <a href="https://github.com/guilhermenunes-jpn/desenvolvimento_front-end_para_web" class="btn" target="_blank" rel="noopener">Ver código</a>
+            <button type="button" class="btn btn-linha" data-detalhes="d-vivaz">Detalhes</button>
+          </div>
         </div>
       </article>
 
@@ -121,7 +134,10 @@
           <p class="materia">Desenvolvimento Front-end para Web</p>
           <h3>Barber Shop</h3>
           <p>Site de barbearia em HTML e CSS puro, com menu fixo, galeria de fotos, mapa e formulário de contato.</p>
-          <a href="https://github.com/guilhermenunes-jpn/desenvolvimento_front-end_para_web" class="btn" target="_blank" rel="noopener">Ver código</a>
+          <div class="projeto-links">
+            <a href="https://github.com/guilhermenunes-jpn/desenvolvimento_front-end_para_web" class="btn" target="_blank" rel="noopener">Ver código</a>
+            <button type="button" class="btn btn-linha" data-detalhes="d-barber">Detalhes</button>
+          </div>
         </div>
       </article>
 
@@ -131,7 +147,10 @@
           <p class="materia">Modelagem de Banco de Dados</p>
           <h3>Modelos conceitual, lógico e físico</h3>
           <p>Diagramas entidade-relacionamento, normalização e o script SQL que cria o banco a partir do modelo lógico.</p>
-          <a href="https://github.com/guilhermenunes-jpn/modelagem_de_banco_de_dados" class="btn" target="_blank" rel="noopener">Ver projeto</a>
+          <div class="projeto-links">
+            <a href="https://github.com/guilhermenunes-jpn/modelagem_de_banco_de_dados" class="btn" target="_blank" rel="noopener">Ver projeto</a>
+            <button type="button" class="btn btn-linha" data-detalhes="d-sql">Detalhes</button>
+          </div>
         </div>
       </article>
 
@@ -141,7 +160,10 @@
           <p class="materia">Programação em Python</p>
           <h3>Exercícios de Python</h3>
           <p>Lógica de programação na prática: tipos de dados, condicionais, laços e funções.</p>
-          <a href="https://github.com/guilhermenunes-jpn/programacao_em_python" class="btn" target="_blank" rel="noopener">Ver projeto</a>
+          <div class="projeto-links">
+            <a href="https://github.com/guilhermenunes-jpn/programacao_em_python" class="btn" target="_blank" rel="noopener">Ver projeto</a>
+            <button type="button" class="btn btn-linha" data-detalhes="d-python">Detalhes</button>
+          </div>
         </div>
       </article>
 
@@ -151,7 +173,10 @@
           <p class="materia">Engenharia de Prompt e Aplicações em IA</p>
           <h3>Prompts e automação com IA</h3>
           <p>Desafios de prompt, programação assistida e automação com IA em notebooks Jupyter.</p>
-          <a href="https://github.com/guilhermenunes-jpn/engenharia_de_prompt_aplicacoes_ai" class="btn" target="_blank" rel="noopener">Ver projeto</a>
+          <div class="projeto-links">
+            <a href="https://github.com/guilhermenunes-jpn/engenharia_de_prompt_aplicacoes_ai" class="btn" target="_blank" rel="noopener">Ver projeto</a>
+            <button type="button" class="btn btn-linha" data-detalhes="d-ia">Detalhes</button>
+          </div>
         </div>
       </article>
     </div>
@@ -210,6 +235,10 @@
           <strong>GitHub</strong>
           <span>@guilhermenunes-jpn</span>
         </a>
+        <div class="contato-card contato-breve">
+          <strong>E-mail</strong>
+          <span>em breve</span>
+        </div>
       </div>
     </div>
   </section>
@@ -227,5 +256,97 @@
     </div>
     <p class="copy">© 2026 Guilherme Nunes</p>
   </footer>
+
+  <dialog class="detalhes" id="d-macabro" aria-labelledby="t-macabro">
+    <button type="button" class="fechar" aria-label="Fechar">&times;</button>
+    <img src="img/site-macabro.jpg" alt="Página inicial do Site Macabro" loading="lazy">
+    <p class="materia">Desenvolvimento Front-end para Web · Em dupla</p>
+    <h3 id="t-macabro">Site Macabro</h3>
+    <h4>O que eu aprendi</h4>
+    <ul class="aprendi">
+      <li>Montar o layout com o sistema de grid do Bootstrap</li>
+      <li>Usar componentes prontos como barra de navegação, cartões e carrossel</li>
+      <li>Trabalhar em dupla no mesmo projeto usando Git e GitHub</li>
+      <li>Publicar o site no ar com o GitHub Pages</li>
+    </ul>
+    <h4>Tecnologias</h4>
+    <ul class="skills"><li>HTML</li><li>CSS</li><li>Bootstrap</li><li>Git</li><li>GitHub Pages</li></ul>
+  </dialog>
+
+  <dialog class="detalhes" id="d-vivaz" aria-labelledby="t-vivaz">
+    <button type="button" class="fechar" aria-label="Fechar">&times;</button>
+    <img src="img/vivaz.jpg" alt="Portal Vivaz" loading="lazy">
+    <p class="materia">Desenvolvimento Front-end para Web</p>
+    <h3 id="t-vivaz">Vivaz: portal com Bootstrap</h3>
+    <h4>O que eu aprendi</h4>
+    <ul class="aprendi">
+      <li>Criar uma barra de navegação responsiva com menu suspenso e busca</li>
+      <li>Usar as classes de cor e espaçamento do Bootstrap nos cartões</li>
+      <li>Organizar conteúdo com acordeão e carrossel</li>
+      <li>Adicionar ícones com Font Awesome</li>
+    </ul>
+    <h4>Tecnologias</h4>
+    <ul class="skills"><li>HTML</li><li>Bootstrap</li><li>Font Awesome</li></ul>
+  </dialog>
+
+  <dialog class="detalhes" id="d-barber" aria-labelledby="t-barber">
+    <button type="button" class="fechar" aria-label="Fechar">&times;</button>
+    <p class="materia">Desenvolvimento Front-end para Web</p>
+    <h3 id="t-barber">Barber Shop</h3>
+    <h4>O que eu aprendi</h4>
+    <ul class="aprendi">
+      <li>Dividir a página em seções com HTML semântico</li>
+      <li>Deixar o cabeçalho fixo no topo com sombra</li>
+      <li>Alinhar o menu com flexbox</li>
+      <li>Montar uma galeria de fotos e um formulário de contato</li>
+    </ul>
+    <h4>Tecnologias</h4>
+    <ul class="skills"><li>HTML</li><li>CSS</li><li>Flexbox</li></ul>
+  </dialog>
+
+  <dialog class="detalhes" id="d-sql" aria-labelledby="t-sql">
+    <button type="button" class="fechar" aria-label="Fechar">&times;</button>
+    <p class="materia">Modelagem de Banco de Dados</p>
+    <h3 id="t-sql">Modelos conceitual, lógico e físico</h3>
+    <h4>O que eu aprendi</h4>
+    <ul class="aprendi">
+      <li>Identificar entidades, atributos e relacionamentos e desenhar o DER</li>
+      <li>Passar do modelo conceitual para o lógico e o físico</li>
+      <li>Aplicar normalização para evitar dados repetidos</li>
+      <li>Escrever o script SQL que cria o banco e as tabelas, com chaves primárias e estrangeiras</li>
+    </ul>
+    <h4>Tecnologias</h4>
+    <ul class="skills"><li>MER/DER</li><li>Normalização</li><li>SQL</li><li>MySQL</li></ul>
+  </dialog>
+
+  <dialog class="detalhes" id="d-python" aria-labelledby="t-python">
+    <button type="button" class="fechar" aria-label="Fechar">&times;</button>
+    <p class="materia">Programação de Computadores em Python</p>
+    <h3 id="t-python">Exercícios de Python</h3>
+    <h4>O que eu aprendi</h4>
+    <ul class="aprendi">
+      <li>Trabalhar com os tipos de dados e a entrada e saída de informações</li>
+      <li>Tomar decisões com if, elif e else</li>
+      <li>Repetir tarefas com for e while</li>
+      <li>Organizar o código em funções</li>
+    </ul>
+    <h4>Tecnologias</h4>
+    <ul class="skills"><li>Python</li><li>VS Code</li></ul>
+  </dialog>
+
+  <dialog class="detalhes" id="d-ia" aria-labelledby="t-ia">
+    <button type="button" class="fechar" aria-label="Fechar">&times;</button>
+    <p class="materia">Engenharia de Prompt e Aplicações em IA</p>
+    <h3 id="t-ia">Prompts e automação com IA</h3>
+    <h4>O que eu aprendi</h4>
+    <ul class="aprendi">
+      <li>Escrever prompts claros, com contexto e exemplos</li>
+      <li>Entender o que são tokens e como o modelo lê o texto</li>
+      <li>Usar IA para ajudar a programar</li>
+      <li>Automatizar tarefas com IA em notebooks Jupyter</li>
+    </ul>
+    <h4>Tecnologias</h4>
+    <ul class="skills"><li>IA generativa</li><li>Jupyter</li><li>Python</li><li>GitHub</li></ul>
+  </dialog>
 </body>
 </html>
