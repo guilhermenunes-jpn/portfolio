@@ -9,6 +9,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Guilherme de Pontes Nunes | Portfólio">
+  <meta property="og:description" content="Estudante de Análise e Desenvolvimento de Sistemas na UDF. Projetos de front-end, banco de dados, Python e IA.">
+  <meta property="og:image" content="https://guilhermenunes-jpn.github.io/portfolio/img/og.jpg">
+  <meta property="og:url" content="https://guilhermenunes-jpn.github.io/portfolio/">
+  <meta name="twitter:card" content="summary_large_image">
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="topo">
@@ -20,6 +29,7 @@
       <a href="#inicio">Início</a>
       <a href="#sobre">Sobre</a>
       <a href="#projetos">Projetos</a>
+      <a href="#formacao">Formação</a>
       <a href="#contato">Contato</a>
     </nav>
   </header>
@@ -79,12 +89,35 @@
       <p class="subtitulo">Trabalhos que fiz nas disciplinas do curso</p>
 
       <article class="projeto">
-        <div class="capa"><span>&lt;/&gt;</span><small>front-end</small></div>
+        <div class="capa capa-print"><img src="img/site-macabro.jpg" alt="Página inicial do Site Macabro, com lua cheia, corvo e morcegos." width="800" height="500" loading="lazy"></div>
+        <div class="projeto-info">
+          <p class="materia">Desenvolvimento Front-end para Web · Em dupla</p>
+          <h3>Site Macabro</h3>
+          <p>Site com tema de Halloween feito com Bootstrap, em dupla com o Gabriel Cruz.</p>
+          <div class="projeto-links">
+            <a href="https://gabrielvictoraraujodacruz-create.github.io/Site_Macabro/" class="btn" target="_blank" rel="noopener">Ver site</a>
+            <a href="https://github.com/gabrielvictoraraujodacruz-create/Site_Macabro" class="btn btn-linha" target="_blank" rel="noopener">Código</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="projeto">
+        <div class="capa capa-print"><img src="img/vivaz.jpg" alt="Portal de notícias Vivaz feito com Bootstrap, com menu escuro, cartões coloridos e seção de notícias." width="1280" height="800" loading="lazy"></div>
         <div class="projeto-info">
           <p class="materia">Desenvolvimento Front-end para Web</p>
-          <h3>Sites em HTML, CSS e JavaScript</h3>
-          <p>Páginas feitas em aula, incluindo um site sobre a Seleção Brasileira, layouts com Bootstrap e os primeiros scripts em JavaScript.</p>
-          <a href="https://github.com/guilhermenunes-jpn/desenvolvimento_front-end_para_web" class="btn" target="_blank" rel="noopener">Ver projeto</a>
+          <h3>Vivaz: portal com Bootstrap</h3>
+          <p>Portal de notícias montado com componentes do Bootstrap: barra de navegação, cartões, carrossel e acordeão.</p>
+          <a href="https://github.com/guilhermenunes-jpn/desenvolvimento_front-end_para_web" class="btn" target="_blank" rel="noopener">Ver código</a>
+        </div>
+      </article>
+
+      <article class="projeto">
+        <div class="capa"><span>&lt;/&gt;</span><small>html + css</small></div>
+        <div class="projeto-info">
+          <p class="materia">Desenvolvimento Front-end para Web</p>
+          <h3>Barber Shop</h3>
+          <p>Site de barbearia em HTML e CSS puro, com menu fixo, galeria de fotos, mapa e formulário de contato.</p>
+          <a href="https://github.com/guilhermenunes-jpn/desenvolvimento_front-end_para_web" class="btn" target="_blank" rel="noopener">Ver código</a>
         </div>
       </article>
 
@@ -120,7 +153,32 @@
     </div>
   </section>
 
-  <section id="contato" class="secao">
+  <section id="formacao" class="secao">
+    <div class="container">
+      <h2 class="titulo">Formação</h2>
+      <p class="subtitulo">Minha caminhada no curso até aqui</p>
+      <ol class="linha-tempo">
+        <li>
+          <span class="quando">2026</span>
+          <h3>Análise e Desenvolvimento de Sistemas</h3>
+          <p>UDF Centro Universitário · Brasília</p>
+          <p>Cursando o 2º semestre.</p>
+        </li>
+        <li>
+          <span class="quando">Disciplinas</span>
+          <h3>O que já estudei no curso</h3>
+          <ul class="skills">
+            <li>Desenvolvimento Front-end para Web</li>
+            <li>Modelagem de Banco de Dados</li>
+            <li>Programação em Python</li>
+            <li>Engenharia de Prompt e Aplicações em IA</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="contato" class="secao secao-cinza">
     <div class="container">
       <h2 class="titulo">Contato</h2>
       <p class="subtitulo">Quer trocar uma ideia sobre algum projeto? É só chamar</p>
