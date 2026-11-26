@@ -3,107 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guilherme de Pontes Nunes | Portfólio</title>
+  <title>Guilherme Nunes | Portfólio</title>
   <meta name="description" content="Portfólio acadêmico de Guilherme de Pontes Nunes, estudante de Análise e Desenvolvimento de Sistemas na UDF.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="topo">
-    <a href="#inicio" class="marca">GN</a>
+    <a href="#inicio" class="marca">
+      <img src="img/guilherme.jpg" alt="" width="40" height="40">
+      <span>Guilherme Nunes</span>
+    </a>
     <nav>
+      <a href="#inicio">Início</a>
       <a href="#sobre">Sobre</a>
       <a href="#projetos">Projetos</a>
       <a href="#contato">Contato</a>
     </nav>
   </header>
 
-  <main>
-    <section id="inicio" class="hero">
-      <img src="img/guilherme.jpg" alt="Foto de Guilherme de Pontes Nunes" class="foto" width="600" height="600">
-      <div>
-        <p class="rotulo">Análise e Desenvolvimento de Sistemas · UDF</p>
-        <h1>Guilherme de Pontes Nunes</h1>
-        <p class="lead">Estudante do 2º semestre. Aqui ficam os trabalhos que fiz nas disciplinas do curso, de front-end a banco de dados.</p>
-        <div class="botoes">
-          <a href="#projetos" class="btn">Ver projetos</a>
-          <a href="https://github.com/guilhermenunes-jpn" class="btn btn-linha" target="_blank" rel="noopener">GitHub</a>
+  <section id="inicio" class="hero">
+    <div class="hero-conteudo">
+      <p class="terminal"><span>$</span> whoami</p>
+      <h1>Olá, eu sou o <strong>Guilherme</strong></h1>
+      <p class="hero-texto">Estudante de Análise e Desenvolvimento de Sistemas na UDF. Aqui você encontra os projetos que venho construindo ao longo do curso.</p>
+      <a href="#projetos" class="btn btn-claro">Ver projetos</a>
+    </div>
+    <div class="redes">
+      <a href="https://github.com/guilhermenunes-jpn" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.7 1.7.3 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+      </a>
+      <a href="LINKEDIN_URL" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2ZM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2ZM7.1 20.5H3.5V9h3.6v11.5ZM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0Z"/></svg>
+      </a>
+    </div>
+    <a href="#sobre" class="seta" aria-label="Ir para Sobre"></a>
+  </section>
+
+  <section id="sobre" class="secao">
+    <div class="container">
+      <h2 class="titulo">Sobre mim</h2>
+      <p class="subtitulo">Um pouco de quem eu sou e do que estou aprendendo</p>
+      <div class="sobre">
+        <div>
+          <h3>Quem sou eu</h3>
+          <p>Sou o <strong>Guilherme de Pontes Nunes</strong>, aluno do <strong>2º semestre de Análise e Desenvolvimento de Sistemas</strong> no UDF Centro Universitário, em Brasília.</p>
+          <p>Gosto de entender como as coisas funcionam por trás da tela. No curso já passei por front-end, banco de dados, Python e inteligência artificial, e cada trabalho que faço vai para o meu GitHub.</p>
+          <a href="#contato" class="btn">Fale comigo</a>
+        </div>
+        <div>
+          <h3>Minhas habilidades</h3>
+          <ul class="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Modelagem de dados</li>
+            <li>Engenharia de prompt</li>
+            <li>Jupyter</li>
+            <li>Git</li>
+            <li>GitHub</li>
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="sobre">
-      <h2>Sobre</h2>
-      <div class="sobre">
-        <p>Curso Análise e Desenvolvimento de Sistemas no UDF Centro Universitário, em Brasília. Gosto de entender como as coisas funcionam por trás da tela e de colocar a mão no código para aprender.</p>
-        <ul class="infos">
-          <li><span>Curso</span>Análise e Desenvolvimento de Sistemas</li>
-          <li><span>Instituição</span>UDF Centro Universitário</li>
-          <li><span>Semestre</span>2º</li>
-        </ul>
-      </div>
-      <h3>O que venho estudando</h3>
-      <ul class="tags">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Bootstrap</li>
-        <li>Python</li>
-        <li>SQL</li>
-        <li>Modelagem de dados</li>
-        <li>Engenharia de prompt</li>
-        <li>Git e GitHub</li>
-      </ul>
-    </section>
+  <section id="projetos" class="secao secao-cinza">
+    <div class="container">
+      <h2 class="titulo">Projetos</h2>
+      <p class="subtitulo">Trabalhos que fiz nas disciplinas do curso</p>
 
-    <section id="projetos">
-      <h2>Projetos</h2>
-      <div class="cards">
-        <article class="card">
+      <article class="projeto">
+        <div class="capa"><span>&lt;/&gt;</span><small>front-end</small></div>
+        <div class="projeto-info">
           <p class="materia">Desenvolvimento Front-end para Web</p>
           <h3>Sites em HTML, CSS e JavaScript</h3>
           <p>Páginas feitas em aula, incluindo um site sobre a Seleção Brasileira, layouts com Bootstrap e os primeiros scripts em JavaScript.</p>
-          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Bootstrap</li></ul>
-          <a href="https://github.com/guilhermenunes-jpn/desenvolvimento_front-end_para_web" target="_blank" rel="noopener">Ver repositório →</a>
-        </article>
-        <article class="card">
+          <a href="https://github.com/guilhermenunes-jpn/desenvolvimento_front-end_para_web" class="btn" target="_blank" rel="noopener">Ver projeto</a>
+        </div>
+      </article>
+
+      <article class="projeto">
+        <div class="capa"><span>SQL</span><small>banco de dados</small></div>
+        <div class="projeto-info">
           <p class="materia">Modelagem de Banco de Dados</p>
           <h3>Modelos conceitual, lógico e físico</h3>
           <p>Diagramas entidade-relacionamento, normalização e o script SQL que cria o banco a partir do modelo lógico.</p>
-          <ul class="tags"><li>MER/DER</li><li>Normalização</li><li>SQL</li></ul>
-          <a href="https://github.com/guilhermenunes-jpn/modelagem_de_banco_de_dados" target="_blank" rel="noopener">Ver repositório →</a>
-        </article>
-        <article class="card">
+          <a href="https://github.com/guilhermenunes-jpn/modelagem_de_banco_de_dados" class="btn" target="_blank" rel="noopener">Ver projeto</a>
+        </div>
+      </article>
+
+      <article class="projeto">
+        <div class="capa"><span>.py</span><small>python</small></div>
+        <div class="projeto-info">
           <p class="materia">Programação em Python</p>
           <h3>Exercícios de Python</h3>
           <p>Lógica de programação na prática: tipos de dados, condicionais, laços e funções.</p>
-          <ul class="tags"><li>Python</li><li>Lógica</li></ul>
-          <a href="https://github.com/guilhermenunes-jpn/programacao_em_python" target="_blank" rel="noopener">Ver repositório →</a>
-        </article>
-        <article class="card">
+          <a href="https://github.com/guilhermenunes-jpn/programacao_em_python" class="btn" target="_blank" rel="noopener">Ver projeto</a>
+        </div>
+      </article>
+
+      <article class="projeto">
+        <div class="capa"><span>IA</span><small>prompt</small></div>
+        <div class="projeto-info">
           <p class="materia">Engenharia de Prompt e Aplicações em IA</p>
           <h3>Prompts e automação com IA</h3>
           <p>Desafios de prompt, programação assistida e automação com IA em notebooks Jupyter.</p>
-          <ul class="tags"><li>IA generativa</li><li>Jupyter</li><li>Python</li></ul>
-          <a href="https://github.com/guilhermenunes-jpn/engenharia_de_prompt_aplicacoes_ai" target="_blank" rel="noopener">Ver repositório →</a>
-        </article>
-      </div>
-    </section>
+          <a href="https://github.com/guilhermenunes-jpn/engenharia_de_prompt_aplicacoes_ai" class="btn" target="_blank" rel="noopener">Ver projeto</a>
+        </div>
+      </article>
+    </div>
+  </section>
 
-    <section id="contato">
-      <h2>Contato</h2>
-      <p class="lead">Quer trocar uma ideia sobre algum projeto? Me chama.</p>
-      <div class="botoes">
-        <a href="LINKEDIN_URL" class="btn" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/guilhermenunes-jpn" class="btn btn-linha" target="_blank" rel="noopener">GitHub</a>
+  <section id="contato" class="secao">
+    <div class="container">
+      <h2 class="titulo">Contato</h2>
+      <p class="subtitulo">Quer trocar uma ideia sobre algum projeto? É só chamar</p>
+      <div class="contato">
+        <a href="LINKEDIN_URL" class="contato-card" target="_blank" rel="noopener">
+          <strong>LinkedIn</strong>
+          <span>Guilherme Pontes Nunes</span>
+        </a>
+        <a href="https://github.com/guilhermenunes-jpn" class="contato-card" target="_blank" rel="noopener">
+          <strong>GitHub</strong>
+          <span>@guilhermenunes-jpn</span>
+        </a>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2026 Guilherme de Pontes Nunes</p>
+    <div class="container rodape">
+      <div>
+        <h4>Guilherme de Pontes Nunes</h4>
+        <p>Estudante de Análise e Desenvolvimento de Sistemas no UDF Centro Universitário.</p>
+      </div>
+      <div class="rodape-links">
+        <a href="https://github.com/guilhermenunes-jpn" target="_blank" rel="noopener">GitHub</a>
+        <a href="LINKEDIN_URL" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <p class="copy">© 2026 Guilherme Nunes</p>
   </footer>
 </body>
 </html>
