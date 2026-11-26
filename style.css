@@ -258,7 +258,7 @@ h1 strong {
 
 footer { background: var(--preto); color: var(--cinza); padding-top: 64px; }
 .rodape { display: flex; justify-content: space-between; gap: 32px; flex-wrap: wrap; padding-bottom: 48px; border-bottom: 1px solid #2a2a2a; }
-footer h4 { color: var(--branco); font-size: 1.2rem; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+footer .rodape-nome { color: var(--branco); font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 1.2rem; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
 .rodape-links { display: flex; gap: 24px; align-items: center; }
 .rodape-links a { color: var(--branco); font-weight: 600; }
 .rodape-links a:hover { color: var(--cinza); }
