@@ -1,0 +1,167 @@
+:root {
+  --fundo: #0b0b0b;
+  --fundo-2: #161616;
+  --texto: #f2f2f2;
+  --suave: #a3a3a3;
+  --borda: #2a2a2a;
+  --destaque: #ffffff;
+  --destaque-texto: #0b0b0b;
+}
+
+body.claro {
+  --fundo: #ffffff;
+  --fundo-2: #f2f2f2;
+  --texto: #111111;
+  --suave: #5c5c5c;
+  --borda: #dcdcdc;
+  --destaque: #111111;
+  --destaque-texto: #ffffff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--fundo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+a { color: inherit; }
+
+.topo {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: var(--fundo);
+  border-bottom: 1px solid var(--borda);
+  z-index: 10;
+}
+
+.marca { font-weight: 800; text-decoration: none; letter-spacing: 1px; }
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--suave);
+  font-size: 0.95rem;
+}
+
+nav a:hover { color: var(--texto); }
+
+main { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+
+section { padding: 80px 0; border-bottom: 1px solid var(--borda); }
+
+h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.1; font-weight: 800; margin: 8px 0 16px; }
+h2 { font-size: 1.8rem; margin-bottom: 24px; }
+h3 { font-size: 1.1rem; margin: 32px 0 12px; }
+
+.hero {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 48px;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.foto {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  border: 4px solid var(--borda);
+}
+
+.rotulo, .materia {
+  color: var(--suave);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.lead { color: var(--suave); font-size: 1.1rem; max-width: 560px; }
+
+.botoes { display: flex; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 6px;
+  background: var(--destaque);
+  color: var(--destaque-texto);
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid var(--destaque);
+  transition: opacity 0.2s;
+}
+
+.btn:hover { opacity: 0.8; }
+
+.btn-linha { background: transparent; color: var(--texto); border-color: var(--borda); }
+
+.sobre { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; }
+
+.infos { list-style: none; }
+.infos li { padding: 10px 0; border-bottom: 1px solid var(--borda); }
+.infos span { display: block; color: var(--suave); font-size: 0.8rem; }
+
+.tags { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+.tags li {
+  padding: 4px 12px;
+  border: 1px solid var(--borda);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: var(--suave);
+}
+
+.cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+
+.card {
+  background: var(--fundo-2);
+  border: 1px solid var(--borda);
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover { transform: translateY(-4px); border-color: var(--suave); }
+.card h3 { margin: 0; }
+.card p:not(.materia) { color: var(--suave); }
+.card a { margin-top: auto; font-weight: 500; text-decoration: none; }
+.card a:hover { text-decoration: underline; }
+
+#contato { border-bottom: none; text-align: center; }
+#contato .lead { margin: 0 auto; }
+#contato .botoes { justify-content: center; }
+
+footer {
+  text-align: center;
+  padding: 24px;
+  color: var(--suave);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--borda);
+}
+
+@media (max-width: 720px) {
+  nav a { margin-left: 14px; }
+  section { padding: 56px 0; }
+  .hero { grid-template-columns: 1fr; text-align: center; gap: 24px; min-height: auto; }
+  .foto { max-width: 200px; margin: 0 auto; }
+  .hero .botoes { justify-content: center; }
+  .lead { margin: 0 auto; }
+  .sobre, .cards { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .card, .btn { transition: none; }
+}
