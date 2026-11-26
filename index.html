@@ -56,7 +56,7 @@
     <div class="container numeros-grade">
       <div><strong data-alvo="2">2</strong><span>semestres</span></div>
       <div><strong data-alvo="8">8</strong><span>disciplinas</span></div>
-      <div><strong data-alvo="6">6</strong><span>projetos</span></div>
+      <div><strong data-alvo="7">7</strong><span>projetos</span></div>
       <div><strong data-alvo="14">14</strong><span>tecnologias</span></div>
     </div>
   </section>
@@ -100,6 +100,19 @@
     <div class="container">
       <h2 class="titulo">Projetos</h2>
       <p class="subtitulo">Trabalhos que fiz nas disciplinas do curso</p>
+
+      <article class="projeto">
+        <div class="capa capa-print"><img src="img/selecao.jpg" alt="Página inicial do site da Seleção Brasileira, com menu verde e o escudo da CBF em fundo amarelo." width="1280" height="800" loading="lazy"></div>
+        <div class="projeto-info">
+          <p class="materia">Desenvolvimento Front-end para Web · Avaliativo · Meu primeiro site</p>
+          <h3>Seleção Brasileira</h3>
+          <p>Meu primeiro site avaliativo: uma homenagem à Seleção, com galeria de fotos, títulos, mapa e formulário de contato, em HTML e CSS.</p>
+          <div class="projeto-links">
+            <a href="selecao/" class="btn" target="_blank" rel="noopener">Ver site</a>
+            <button type="button" class="btn btn-linha" data-detalhes="d-selecao">Detalhes</button>
+          </div>
+        </div>
+      </article>
 
       <article class="projeto">
         <div class="capa capa-print"><img src="img/projetotech.jpg" alt="Página inicial do Eventos Tech Brasília 2026, com faixa azul e verde e botões para explorar eventos." width="1280" height="800" loading="lazy"></div>
@@ -236,9 +249,9 @@
           <strong>GitHub</strong>
           <span>@guilhermenunes-jpn</span>
         </a>
-        <a href="mailto:guilhermepnubes359@gmail.com" class="contato-card">
+        <a href="mailto:guilhermepnunes359@gmail.com" class="contato-card">
           <strong>E-mail</strong>
-          <span>guilhermepnubes359@gmail.com</span>
+          <span>guilhermepnunes359@gmail.com</span>
         </a>
       </div>
     </div>
@@ -257,6 +270,23 @@
     </div>
     <p class="copy">© 2026 Guilherme Nunes</p>
   </footer>
+
+  <dialog class="detalhes" id="d-selecao" aria-labelledby="t-selecao">
+    <button type="button" class="fechar" aria-label="Fechar">&times;</button>
+    <img src="img/selecao.jpg" alt="Página inicial do site da Seleção Brasileira" loading="lazy">
+    <p class="materia">Desenvolvimento Front-end para Web · Avaliativo</p>
+    <h3 id="t-selecao">Seleção Brasileira</h3>
+    <h4>O que eu aprendi</h4>
+    <ul class="aprendi">
+      <li>Estruturar uma página com cabeçalho, menu e seções</li>
+      <li>Ligar o menu às seções da própria página com links por id</li>
+      <li>Colocar imagens, uma imagem de capa e um mapa do Google Maps com iframe</li>
+      <li>Criar um formulário de contato com campos de nome, e-mail e mensagem</li>
+      <li>Estilizar tudo com um arquivo CSS separado, nas cores da Seleção</li>
+    </ul>
+    <h4>Tecnologias</h4>
+    <ul class="skills"><li>HTML</li><li>CSS</li><li>Google Maps</li></ul>
+  </dialog>
 
   <dialog class="detalhes" id="d-macabro" aria-labelledby="t-macabro">
     <button type="button" class="fechar" aria-label="Fechar">&times;</button>
